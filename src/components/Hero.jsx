@@ -3,8 +3,8 @@ const Hero = () => {
   return (
     <section className=" py-5 border">
       <div className="container text-center">
-        <div className="row align-items-center border py-3 rounded-3">
-          <div className="col-lg-6">
+        <div className="row align-items-center py-5 rounded-3">
+          <div className="col-lg-6 ">
             <img src={dice} className="img-001" alt="" />
           </div>
           <div className="col-lg-6 text-end">
