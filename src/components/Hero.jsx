@@ -1,0 +1,20 @@
+import dice from "../../public/img/1.png";
+const Hero = () => {
+  return (
+    <section className=" py-5 border">
+      <div className="container text-center">
+        <div className="row align-items-center border py-3 rounded-3">
+          <div className="col-lg-6">
+            <img src={dice} className="img-001" alt="" />
+          </div>
+          <div className="col-lg-6 text-end">
+            <h1 className="display-1 fw-bold">Dice Game</h1>
+            <button className="btn btn_c1 px-5">Play Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Hero;
