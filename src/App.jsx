@@ -2,7 +2,9 @@ import Hero from "./components/Hero";
 import "./App.css";
 import { createBrowserRouter, Router, RouterProvider } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import Game from "./components/Game";
+import Game from "./components/Game/Game";
+import { useState } from "react";
+import img from "../public/img/3.png";
 
 const router = createBrowserRouter([
   {
@@ -26,9 +28,19 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [GameStarted, setGameStarted] = useState(false);
+
+  const toggleGamePlay = () => {
+    setGameStarted((prev) => !prev);
+  };
+
   return (
     <>
-      <RouterProvider router={router}></RouterProvider>
+      {GameStarted ? (
+        <Game diceImg={img}></Game>
+      ) : (
+        <Hero toggle={toggleGamePlay}></Hero>
+      )}
     </>
   );
 }

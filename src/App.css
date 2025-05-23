@@ -88,6 +88,7 @@ section {
   font-size: 40px !important;
   padding: 0px 20px !important;
   border-radius: 0px !important;
+  transition: 0.3s background ease-in;
 }
 
 .btn_c2:hover {
@@ -126,4 +127,9 @@ section {
 .text-score {
   font-size: 90px;
   font-weight: bold;
+}
+.role-dice-01 {
+  height: 150px;
+  object-fit: contain;
+  width: 100%;
 }
